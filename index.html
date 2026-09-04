@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Escolar - 913.26</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-symbol">🐻✨</div>
+        <h1>Sistema Escolar</h1>
+        <p class="subtitle">TURMA 913.26</p>
+
+        <div class="btn-grid">
+            <button onclick="cadastrarAluno()">1. Cadastrar Aluno</button>
+            <button onclick="listarAlunos()">2. Listar Alunos</button>
+            <button onclick="mostrarAprovados()">3. Mostrar Aprovados</button>
+            <button onclick="mostrarReprovados()">4. Mostrar Reprovados</button>
+            <button onclick="mostrarMediaTurma()">5. Média da Turma</button>
+            <button onclick="mostrarDestaque()">6. Aluno Destaque</button>
+        </div>
+
+        <button class="btn-prompt" onclick="executarMenuViaPrompt()">Executar via Prompt (While / Switch)</button>
+
+        <div class="painel-resultado" id="painel">
+            <h3>Resultado</h3>
+            <div id="conteudo-painel">Selecione uma opção acima.</div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

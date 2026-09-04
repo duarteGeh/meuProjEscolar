@@ -1,0 +1,121 @@
+:root {
+    --verde-principal: #88c999;
+    --verde-claro: #eaf6ec;
+    --verde-escuro: #2e5a39;
+    --branco: #ffffff;
+    --cinza-texto: #4a4a4a;
+    --cinza-borda: #e0e0e0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--verde-claro);
+    color: var(--cinza-texto);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: var(--branco);
+    width: 90%;
+    max-width: 550px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    border: 2px solid var(--verde-principal);
+}
+
+.header-symbol {
+    font-size: 48px;
+    margin-bottom: 5px;
+    color: var(--verde-escuro);
+}
+
+h1 {
+    color: var(--verde-escuro);
+    font-size: 24px;
+    margin: 0 0 5px 0;
+}
+
+p.subtitle {
+    font-size: 14px;
+    color: var(--verde-principal);
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: var(--verde-principal);
+    color: var(--branco);
+    border: none;
+    padding: 12px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--verde-escuro);
+    transform: translateY(-2px);
+}
+
+button.btn-prompt {
+    width: 100%;
+    background-color: transparent;
+    color: #888;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+button.btn-prompt:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.painel-resultado {
+    margin-top: 20px;
+    padding: 18px;
+    background-color: var(--verde-claro);
+    border: 1px solid var(--verde-principal);
+    border-radius: 10px;
+    text-align: left;
+    min-height: 120px;
+}
+
+.painel-resultado h3 {
+    margin-top: 0;
+    color: var(--verde-escuro);
+    font-size: 16px;
+    border-bottom: 1px solid var(--verde-principal);
+    padding-bottom: 8px;
+}
+
+.item-aluno {
+    background: var(--branco);
+    padding: 8px 12px;
+    margin: 6px 0;
+    border-radius: 6px;
+    font-size: 14px;
+    border: 1px solid var(--cinza-borda);
+    display: flex;
+    justify-content: space-between;
+}
+
+.status-aprovado { color: #2e7d32; font-weight: bold; }
+.status-recuperacao { color: #ed6c02; font-weight: bold; }
+.status-reprovado { color: #d32f2f; font-weight: bold; }
